@@ -9,13 +9,15 @@ export default {
   theme: {
     fontFamily: {
       'headerFont':['var(--font-poppins)'],
-      'bodyFont':['var(--font-open-sans)']
+      'bodyFont':['var(--font-open-sans)'],
+
     },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        headerColor: "#F45100"
+        headerColor: "#F45100",
+        copyrightColor:"#9C9999"
       },
     },
   },
