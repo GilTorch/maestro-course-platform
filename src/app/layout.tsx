@@ -5,13 +5,14 @@ import "./globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["900"],
+  weight: ["800", "900"],
   display: 'swap'
 });
 
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
+  weight: ["400"],
   subsets: ["latin"],
   display: 'swap'
 });
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${openSans.className} ${poppins.className} antialiased`}
+        className={`${openSans.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>
