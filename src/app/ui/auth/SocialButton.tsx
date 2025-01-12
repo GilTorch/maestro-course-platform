@@ -7,7 +7,7 @@ type SocialButtonProps = {
 }
 
 const SocialButton = ({ text, src, onClick }: SocialButtonProps) => {
-  return <button onClick={onClick} className="w-full border p-2 relative">
+  return <button onClick={onClick} className="w-full border p-3 relative">
     <div className="ml-2 absolute">
         <Image src={src} width={24} height={24} alt="Google logo" />
     </div>
