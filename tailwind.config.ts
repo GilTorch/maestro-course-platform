@@ -7,10 +7,15 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'headerFont':['var(--font-poppins)'],
+      'bodyFont':['var(--font-open-sans)']
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        headerColor: "#F45100"
       },
     },
   },
