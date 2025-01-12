@@ -3,7 +3,7 @@ import LineWithText from "@/app/ui/auth/LineWithText";
 import MainHeading from "@/app/ui/auth/main-heading";
 import Link from "next/link";
 import SocialButton from "@/app/ui/auth/SocialButton";
-import Copyright from "@/app/ui/Copyright";
+import PrimaryButton from "@/app/ui/auth/PrimaryButton";
 
 export default async function Page() {
 
@@ -25,6 +25,11 @@ export default async function Page() {
                Ou pa gen kont? Kreye youn
             </Link>
         </div>
+        <div className="mt-8">    
+            <PrimaryButton>
+                Kreye yon kont
+            </PrimaryButton>
+        </div>
         <div className="mt-20 mb-20">
             <LineWithText />
         </div>
@@ -32,8 +37,5 @@ export default async function Page() {
             <SocialButton src="/svg/google.svg" text="Konekte ak Google" />
             <SocialButton src="/svg/facebook.svg" text="Konekte ak Facebook" />
         </div>
-        <footer className="absolute bottom-6 flex justify-center items-center">
-            <Copyright />
-        </footer>
     </div>
 }

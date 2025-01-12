@@ -3,6 +3,7 @@ import LineWithText from "@/app/ui/auth/LineWithText";
 import MainHeading from "@/app/ui/auth/main-heading";
 import Link from "next/link";
 import SocialButton from "@/app/ui/auth/SocialButton";
+import PrimaryButton from "@/app/ui/auth/PrimaryButton";
 
 export default async function Page() {
 
@@ -32,6 +33,11 @@ export default async function Page() {
             <Link href={'/auth/login'} className="text-headerColor font-bodyFont underline">
                Ou gen yon kont? Konekte
             </Link>
+        </div>
+        <div className="mt-8">    
+            <PrimaryButton>
+                Kreye yon kont
+            </PrimaryButton>
         </div>
         <div className="mt-20 mb-20">
             <LineWithText />
